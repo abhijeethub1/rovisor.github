@@ -11044,3 +11044,51 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+.po {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+.header1 {
+            background-color: #16A386;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+.header1 .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+.header1 .nav {
+            display: flex;
+            gap: 20px;
+        }
+.header1 .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+.header1 .nav a:hover {
+            text-decoration: underline;
+        }
+.cover1 {
+            text-align: center;
+            color: white;
+        }
+.cover1 img {
+            width: 100%;
+            height: 390px;
+            object-fit: cover;
+        }
+.text1 {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+            background: rgba(255, 255, 255, 0.7); /* Optional: adds a light background for better readability */
+            padding: 20px;
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
