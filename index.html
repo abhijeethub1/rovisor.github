@@ -30,8 +30,70 @@
     </header>
     <section class="cover1">
         <img src="https://media.istockphoto.com/id/1346611118/vector/scene-with-business-people-working-in-the-office.jpg?s=612x612&w=0&k=20&c=NH5XYaUYJan2QuqR6zHC0AFT8D29Cd6ynMqxExPm4kA=" alt="Cover Photo">
-        <div class="text1">We aim to build a financial woke community by empowering the users with every step they take in their financial journey.</div>
+        <div class="text">We aim to build a financial woke community by empowering the users with every step they take in their financial journey.</div>
     </section>
+    <section class="purpose">
+        Our Purpose
+    </section>
+    <section class="grid">
+        <div class="grid-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSwRjDj7Kneu2QW5M5ExSCfod9AnYi6Y8eMsdoZqTc8a9OONfaigtyvgVgorBaSYbkrg&usqp=CAU" alt="Image 1">
+            <div class="description">Informed Users</div>
+            <div class="additional-text">Manage all your accounts seamlessly in one place.</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://www.shutterstock.com/image-vector/report-chart-business-finance-color-260nw-1537831532.jpg" alt="Image 2">
+            <div class="description">Unlock full Potential</div>
+            <div class="additional-text">Make it all count</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://images.squarespace-cdn.com/content/v1/5df03be21a81e867cdce54bb/61449aa8-5e53-4df9-afdf-984f1ace8976/WEB_Training.png" alt="Image 3">
+            <div class="description">Simple and Fun</div>
+            <div class="additional-text">No one likes to work.</div>
+
+        </div>
+    </section>
+    <section class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="https://st2.depositphotos.com/3907761/11588/v/450/depositphotos_115880728-stock-illustration-brain-vector-icon.jpg" alt="Logo 1">
+                <div class="slide-description">AI driven decision supports model - Let AI do your homework.</div>
+            </div>
+            <div class="slide">
+                <img src="logo2.png" alt="Logo 2">
+                <div class="slide-description">Description for Slide 2</div>
+            </div>
+            <div class="slide">
+                <img src="logo3.png" alt="Logo 3">
+                <div class="slide-description">Description for Slide 3</div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-control" onclick="prevSlide()">&#10094;</button>
+            <button class="slider-control" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+
+        function showSlide(index) {
+            const newTransform = -index * 100 / totalSlides;
+            slides.style.transform = `translateX(${newTransform}%)`;
+        }
+
+        function nextSlide() {
+            slideIndex = (slideIndex + 1) % totalSlides;
+            showSlide(slideIndex);
+        }
+
+        function prevSlide() {
+            slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+            showSlide(slideIndex);
+        }
+    </script>
+
     <!-- Masthead-->
     <header class="masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
