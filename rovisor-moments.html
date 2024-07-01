@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rovisor Moments</title>
+    <style>
+        .header1 {
+            background-color: #16A386;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .header1 .logo {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+        .header1 .nav {
+                    display: flex;
+                    gap: 20px;
+                }
+        .header1 .nav a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+        .header1 .nav a:hover {
+                    text-decoration: underline;
+                }
+        .cover1 {
+                    text-align: center;
+                    color: white;
+                }
+        .cover1 img {
+                    width: 100%;
+                    height: 390px;
+                    object-fit: cover;
+                    opacity:50%;
+                }
+        .description-text{
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 32px;
+            text-align: center;
+        }
+            .rovisor-moments {
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.rovisor-moments-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.text-section {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+}
+
+.text-section p {
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 65px;
+    text-align: center;
+
+}
+
+.image-section {
+    flex: 1;
+    text-align: right;
+}
+
+.image-section img {
+    width: 488.94px;
+    height: 316px;
+    top: 726px;
+    left: 309.56px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #e7f3e9;
+    border-radius: 10px;
+    padding: 20px;
+    height:130px;
+    width: 300px;
+    text-align: center;
+}
+
+.feature img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    margin: 0;
+    color: #3a6d34;
+}      
+.text1 {
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+        background: rgba(255, 255, 255, 0.7); /* Optional: adds a light background for better readability */
+        padding: 20px;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+                }
+.rovisor-moments-head {
+        text-align: center;
+        margin: 40px 20px;
+        color: #16A386;
+        font-size: 28px;
+        font-weight: bold;
+        }        
+        .flip-card-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 70px;
+        }
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            perspective: 1000px;
+            margin: 10px;
+            border-radius:10px;
+
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            border-radius:15px;
+        }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 15px;
+        }
+        .flip-card-front {
+            background-color: #EAF9E7;
+            color: #013237;
+        }
+        .flip-card-back {
+            background-color: #16A386;
+            color: white;
+            transform: rotateY(180deg);
+        }
+        .flip-card-front img {
+            width: 50%;
+            height: 50%;
+            border-radius: 10px;
+        }
+        .flip-card-back {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .flip-card-front h3 {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+.footer {
+            background-color:#152000;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            margin-top:40px;
+        }
+        .footer-section {
+            flex: 1;
+            margin: 0 20px;
+            text-align: center;
+        }
+        .footer-section h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .footer-section p, .footer-section a {
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+        }
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+        .footer-section .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .footer-section .social-icons a {
+            color: white;
+            font-size: 24px;
+            padding: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .footer-section .social-icons a:hover {
+            background-color: white;
+            color: #152000;
+        }
+    </style>
+</head>
+<body>
+    <header class="header1">
+        <div class="logo">Rovisor Research</div>
+        <nav class="nav">
+            <a href="rovisor-moments.html" target="blank">Rovisor Moments</a>
+            <a href="rovisor-unify.html" target="blank">Rovisor Unify</a>
+            <a href="rovisor-aboutus.html" target="blank">About</a>
+        </nav>
+    </header>
+    <section class="cover1">
+        <img src="https://s3-alpha-sig.figma.com/img/df56/31c8/31bdd167d61a9ed285ee6e1529827ce0?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=No7YsMwX7qirjvsy4wQXkR2~7iJiYnrK3LysQSRt4u~q95QXHOC5DogrsrQCHfgC7Hg83tvDMqdaaN8VRLZ6572BLrglNNxKHe7DNe9nxjrh5TWg~8dhUZC4Lx0oj~bd1kIZE0Qmn2ppYL8sQ0tZVS3uCFLuvncNyb6qFIV2xBipvWHnDM4lAkzbLox-H9s-bs5qe3OwmjsOJ8StqcpObMR5pYs4fe1VwVdqjhQf1JATcHW54gEkjX57uwBJvsZVaohEyNFLwY6apZj5VNceAsmjgY55Pv8h4vhGUZ6s44KIPaRhBuRrnXyDanQUJE1NcASd11AnvocjpCP~LWSilQ__" alt="Cover Photo">
+          </section>
+    <section class="rovisor-moments-head">
+        Rovisor Moments
+    </section>
+
+    <section class="rovisor-moments">
+        <div class="rovisor-moments-content">
+            <div class="text-section">
+                <p>Empower Your Financial Journey with Rovisor Moments. Discover a range of features designed to simplify and enhance your financial management.</p>
+            </div>
+            <div class="image-section">
+                <img src="images/robotimage.jpg" alt="Robot">
+            </div>
+        </div>
+    </section>  
+    
+<div class="flip-card-container">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/personslogo.jpg" alt="Image 1">
+                <h3>Streamlined Account Management</h3>
+                
+            </div>
+            <div class="flip-card-back">
+                <p>Manage all your Accounts seamlessly in One Place.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="images/endlogo.jpg" alt="Image 2">
+                <h3>Just-in-Time-Alerts</h3>
+            </div>
+            <div class="flip-card-back">
+                <p>Receive time alerts for important financial activities.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <i class="bi bi-file-earmark-post-fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="66.9px" height="94px" fill= "#16A386" class="bi bi-file-earmark-post-fill" viewBox="0 0 16 16">
+                        <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-5-.5H7a.5.5 0 0 1 0 1H4.5a.5.5 0 0 1 0-1m0 3h7a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5"/>
+                    </svg></i>
+                <h3>AI decision-Making</h3>
+            </div>
+            <div class="flip-card-back">
+                <p>Utilize AI-driven models for informed decision making.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@rovisor.in">info@rovisor.in</a></p>
+            <p>Email: <a href="mailto:support@rovisor.in ">support@rovisor.in</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>Around the Web</h3>
+            <div class="social-icons">
+                <a href="https://github.com/rovisor" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/rovisor_in" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/rovisor-research/about/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/rovisor.moments/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://discord.com/channels/1147578991826448424/1147578992279429142" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>About Rovisor Research</h3>
+            <p>Rovisor Research is an AI-first company building smart and easy solutions for finance problems.</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/08574c99a3.js" crossorigin="anonymous"></script>  
+</body>
+</html>
