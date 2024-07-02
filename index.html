@@ -21,7 +21,21 @@
 
 <body id="page-top">
     <!-- Navigation-->
- <header class="header1">
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Rovisor Research</title>
+    <link href="styles.css" rel="stylesheet">
+    /*<!-- Google fonts-->*/
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+</head>    
+<body>
+    <header class="header1">
         <div class="logo">Rovisor Research</div>
         <nav class="nav">
             <a href="rovisor-moments.html">Rovisor Moments</a>
@@ -39,7 +53,7 @@
     <section class="purpose">
         Our Purpose
     </section>
-   <div class="carousel-container">
+    <div class="carousel-container">
         <div class="carousel">
             <!-- Original items -->
             <div class="grid-item">
@@ -65,27 +79,27 @@
     <section class="slider">
         <div class="slides">
             <div class="slide">
-                <img src="mindlogo.jpg" alt="Logo 1">
+                <img src="images/mindlogo.jpg" alt="Logo 1">
                 <div class="slide-description">AI driven decision supports model - Let AI do your homework.</div>
             </div>
             <div class="slide">
-                <img src="clocklogo.jpg" alt="Logo 2">
+                <img src="images/clock.jpg" alt="Logo 2">
                 <div class="slide-description">Time saving decision models - A quick yes/ no decision should not take more than two minutes.</div>
             </div>
             <div class="slide">
-                <img src="timelogo.jpg" alt="Logo 3">
+                <img src="images/timelogo.jpg" alt="Logo 3">
                 <div class="slide-description">Idle money activation models - to help you be prepared for the rainy days.</div>
             </div>
             <div class="slide">
-                <img src="cloudlogo.jpg" alt="Logo 4">
+                <img src="images/cloudlogo.jpg" alt="Logo 4">
                 <div class="slide-description">Customizable AI solutions for your business.</div>
             </div>
             <div class="slide">
-                <img src="detectionlogo.jpg" alt="Logo 5">
+                <img src="images/detectionlogo.jpg" alt="Logo 5">
                 <div class="slide-description">Efficient resource management with AI technology.</div>
             </div>
             <div class="slide">
-                <img src="banklogo.jpg" alt="Logo 6">
+                <img src="images/banklogo.jpg" alt="Logo 6">
                 <div class="slide-description">AI-powered analytics for better decision making.</div>
             </div>
         </div>
@@ -103,39 +117,6 @@
         </div>
     </section>
     
-    <script>
-        let slideIndex = 0;
-        const slides = document.querySelector('.slides');
-        const totalSlides = document.querySelectorAll('.slide').length;
-        const dots = document.querySelectorAll('.dot');
-    
-        function showSlide(index) {
-            const newTransform = -index * 100 / totalSlides;
-            slides.style.transform = `translateX(${newTransform}%)`;
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === index);
-            });
-        }
-    
-        function nextSlide() {
-            slideIndex = (slideIndex + 1) % totalSlides;
-            showSlide(slideIndex);
-        }
-    
-        function prevSlide() {
-            slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
-            showSlide(slideIndex);
-        }
-    
-        function currentSlide(index) {
-            slideIndex = index;
-            showSlide(slideIndex);
-        }
-    
-        // Initialize
-        showSlide(slideIndex);
-    </script>
-    
     <section class="text-box-container">
         <div class="text-box">
             Start your journey and learn with Rovisor
@@ -150,18 +131,22 @@
     <section class="components-section">
         <div class="component component-1">
             <img src="https://s3-alpha-sig.figma.com/img/9c29/f8a0/a87d61afcc90f4bcff3d3831a6189e3e?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Vuc7BVwaLpIgN1m7RIl7bou0LTa9y9KRRmbs0UTnkd1Vjao4pkF8iMs3h83yCQbPU1VsxkZifxiD~nc4D~xZGR1blAAv0XQ9kKLyhW9~u-ULFvt88yOjG3tlloda2hAxUma5zBGMYlO~U60KDAwhp9-P5UGsXDLnnUyrjDaL7a7D2psROitpCBleIZ82T~j3nsr3BCRctinTIuCJAw7N3aukD9PPEAESLh9WHv7~oZLy9YwuR0opnwAY9omIB2wd4njHhiU2vhT7jAqmRKmVcbK9rpCdfs-hvP77ytNh9uqcHzOygp~YgNlbfcxSeXwgoalOmgtHALawcsXX~7l0MQ__" alt="Component Logo 1">
-            <div class="description">Consolidated Statements</div>
-            <div class="additional-text">View your financial data in one comprehensive statement.</div>
+            <div class="description">Steamlined Account Management</div>
+            <div class="additional-text">Manage all your accounts seamlessly in one place.</div>
         </div>
         <div class="component component-2">
             <img src="https://s3-alpha-sig.figma.com/img/85f3/1b1b/0fcbb5f08667707571dd27b22b7340a5?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SwjfVZrZqPa-IE4jiOe-8CLRTPjk1AiIUrZe8~EnXSQBKecW8j1EUHv~Z17Gra6HWpmUSYS2WVF5WuHBQvfTKYZZlo9w9gBZZaZ8996De57z8~SmlyaMtcQ8F8DUYSeBrc8MpuiUUVWQdG8d-j9GJI1mXs4boD~OCAx7Nxl4LVflXdnyQbhmCQxjQ2qrXdCNfpjiGyLHwYPzWtpHNh0PSoaCgMtyhbcnal-ux0MyzkpxL-rY6fGJj~L~85Q0rKGj2Ivao8Wh8bSPllUlSrINu0NGdckRK3-r5vnXoKXGo1zkDoMyH3zcvXNF4Us6JWJkoRxoCRYWmrk4j6-SgZ~6FQ__" alt="Component Logo 2">
-            <div class="description">Automated Budgeting</div>
-            <div class="additional-text">Automate budgeting processes for better financial planning..</div>
+            <div class="description">Just-in-Time Alerts</div>
+            <div class="additional-text">Receive timely alerts for important financial activities.</div>
         </div>
         <div class="component component-3">
-            <img src="https://s3-alpha-sig.figma.com/img/74f3/fbf2/bbfa21d018c18aa75ea2ea6bfbc6c854?Expires=1719792000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pZGICrWBzORpxuokvfWAFROd7SNLgdfeT3bzvG0YIA2g7Oc4wvGpWzYhQ2GOXmGIpz4v-iWl1VNUYmM7v5q~ut634oiEblmyMcMT1rffsu20mu3dtBLjuALiWJvlq-VNLPcbdtEFlnu3K~oO4XzviZhQ0l4zaN8dzYzGuC1i0eFo~x7Wuew4~n3ySRlezlKq7nYQpu-I3qaEOn6t8rgzwMS9iyjgxAjLCPFaCGcS8IkFyhWEemP45CR7uOSfAYMC6dzB1BTzEgb70kH63dQN5ihXraI8jIuRW3T2REwm~rrQr8rSP0JQLiZdGt521z2XTtho70QEpiNAxjH45QTxzA__" alt="Component Logo 3">
-            <div class="description">Expense Tracking</div>
-            <div class="additional-text">Effortlessly track your expenses and manage your budget.</div>
+            <i class="bi bi-file-earmark-post-fill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="66.9px" height="94px" fill= "#16A386" class="bi bi-file-earmark-post-fill" viewBox="0 0 16 16">
+                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1m-5-.5H7a.5.5 0 0 1 0 1H4.5a.5.5 0 0 1 0-1m0 3h7a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5"/>
+                </svg></i>
+            
+            <div class="description">AI Decision-Making Models</div>
+            <div class="additional-text">Utilize AI-driven models for informed decision-making.</div>
         </div>
     </section>    
         
@@ -217,17 +202,11 @@
                 Coming soon...
             </div>
         </div>
-        <div class="curve">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#6ea7b0" fill-opacity="1" d="M0,192L1440,160L1440,320L0,320Z"></path>
-            </svg>
-        </div>
-    </div>
+    </div>    
     <footer class="footer">
         <div class="footer-section">
             <h3>Contact Us</h3>
             <p>Email: <a href="mailto:info@rovisor.in">info@rovisor.in</a></p>
-            <p>Email: <a href="mailto:support@rovisor.in">support@rovisor.in</a></p>
         </div>
         <div class="footer-section">
             <h3>Around the Web</h3>
@@ -238,400 +217,23 @@
                 <a href="https://www.instagram.com/rovisor.moments/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://discord.com/channels/1147578991826448424/1147578992279429142" target="_blank"><i class="fab fa-discord"></i></a>
             </div>
+            <div class="footer-lower">
+                <p>© 2024 Rovisor Research. All rights reserved.</p>
+            </div>
         </div>
         <div class="footer-section">
             <h3>About Rovisor Research</h3>
             <p>Rovisor Research is an AI-first company building smart and easy solutions for finance problems.</p>
         </div>
+        
+        
     </footer>
     <script src="https://kit.fontawesome.com/08574c99a3.js" crossorigin="anonymous"></script>  
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead bg-primary text-white text-center">
-        <div class="container d-flex align-items-center flex-column">
-            <!-- Masthead Avatar Image-->
-            <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
-            <!-- Masthead Heading-->
-            <h1 class="masthead-heading text-uppercase mb-0">Rovisor Moments</h1>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">For the moments that matter</p>
-        </div>
-    </header>
-    <!-- Portfolio Section-->
-    <section class="page-section portfolio" id="portfolio">
-        <div class="container">
-            <!-- Portfolio Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Features</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- Portfolio Grid Items-->
-            <div class="row justify-content-center">
-                <!-- Portfolio Item 1-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 2-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 3-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 4-->
-                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 5-->
-                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
-                    </div>
-                </div>
-                <!-- Portfolio Item 6-->
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                        <div
-                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i
-                                    class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section-->
-    <section class="page-section bg-primary text-white mb-0" id="about">
-        <div class="container">
-            <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
-            </div>
-            <!-- About Section Content-->
-            <div class="row">
-                <div class="col-lg-4 ms-auto">
-                    <p class="lead">Rovisor Moments is your virtual personal finance manager. It provides you the right
-                        information at the right moment that you can act upon.</p>
-                </div>
-                <div class="col-lg-4 me-auto">
-                    <p class="lead">The state of the art AI Bot underatands your cashflow and optimize the way you
-                        manage your funds. </p>
-                </div>
-            </div>
-            <!-- About Section Button-->
-            <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="#">
-                    <i class="fas fa-download me-2"></i>
-                    Coming soon...
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer-->
-    <footer class="footer text-center">
-        <div class="container">
-            <div class="row">
-                <!-- Footer Location-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Contact</h4>
-                    <p class="lead mb-0">
-                        info@rovisor.in
-                        <br />
-                        @Rovisor
-                    </p>
-                </div>
-                <!-- Footer Social Icons-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Around the Web</h4>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/rovisor" target="_blank"><i
-                            class="fab fa-fw fa-github"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/rovisor_in" target="_blank"><i class="fab fa-fw fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/company/rovisor-research/about/" target="_blank"><i
-                            class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href="https://discord.com/channels/1147578991826448424/1147578992279429142" target="_blank"><i class="fab fa-fw fa-discord"></i></a>
-                    <a class="btn btn-outline-light btn-social mx-1" href = "https://www.instagram.com/rovisor.moments/" target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
-                </div>
-                <!-- Footer About Text-->
-                <div class="col-lg-4">
-                    <h4 class="text-uppercase mb-4">About Rovisor</h4>
-                    <p class="lead mb-0">
-                        Rovisor is a modern Robo Advisor that is being developed to make everyone's life easier.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Copyright Section-->
-    <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright &copy; rovisor.in, 2023-24</small></div>
-    </div>
-    <!-- Portfolio Modals-->
-    <!-- Portfolio Modal 1-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">No data entry</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Unlike any other app, Rovisor Moments does not require you to do any
-                                    data entry.</p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 2-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Analysis</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Rovisor Moments analyse your cashflow, anticipate your needs and provide
-                                    you the right information at the right moment.</p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 3-->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Robo works while
-                                    you sleep</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Rovisor Moments continues to work while you are sleeping or enjoing your life
-                                    out there.</p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 4-->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">With Rovisor Moments, you are the controller. Rovisor Moments does not do anything
-                                    without your permission.</p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 5-->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked Safe</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Rovisor Moments is 100% safe asit does not collect any sensitive information
-                                    from you. By design, it has no access to your bank or any other account.</p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio Modal 6-->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button></div>
-                <div class="modal-body text-center pb-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                                <!-- Icon Divider-->
-                                <div class="divider-custom">
-                                    <div class="divider-custom-line"></div>
-                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                    <div class="divider-custom-line"></div>
-                                </div>
-                                <!-- Portfolio Modal - Image-->
-                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png"
-                                    alt="..." />
-                                <!-- Portfolio Modal - Text-->
-                                <p class="mb-4">Rovisor Moments works in the background, hidden your your daily life activities.
-                                    It only pops up when there is a need.</p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal">
-                                    <i class="fas fa-xmark fa-fw"></i>
-                                    Close Window
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-</body>
+    <script src="script.js"></script>
 
+</body>
 </html>
