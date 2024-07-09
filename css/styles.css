@@ -10,11 +10,12 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- 
+
 .body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
 .header1 {
   background-color: #16A386;
   color: white;
@@ -24,7 +25,7 @@
   padding: 10px 20px;
 }
 .header1 .logo {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
 }
 .header1 .nav {
@@ -34,7 +35,7 @@
 .header1 .nav a {
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
 }
 .header1 .nav a:hover {
   text-decoration: underline;
@@ -51,10 +52,10 @@
 }
 .cover-text{
 font-family: Roboto;
-font-size: 22px;
+font-size: 28px;
 color: black;
 font-weight: 500;
-line-height: 51px;
+line-height: 56px;
 text-align: center;
 width: 1440px;
 height: 229px;
@@ -75,11 +76,12 @@ padding: 0px 25px;
   text-align: center;
 }
 .text{
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
+  line-height: 40px;
   color: black;
   background: rgba(255, 255, 255, 0.7); /* Optional: adds a light background for better readability */
-  padding: 0px;
+  padding: 40px;
   width: 50%;
   margin: 0 auto;
   text-align: center;
@@ -88,7 +90,7 @@ padding: 0px 25px;
   text-align: center;
   margin: 60px 20px;
   color: #16A386;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: bold;
 }
 .carousel-container {
@@ -107,40 +109,35 @@ padding: 0px 25px;
 .grid-item {
   width: calc(100vw / 3); /* Each item takes 1/3 of the viewport width */
   box-sizing: border-box;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   flex-shrink: 0;
 }
 
 .grid-item img {
-  width: 100px;
+  width: 110px;
   height:100px; /* Limit the height to make images smaller */
-  border-radius: 5px; /* Optional: Rounding the image corners */
+  border-radius: 0px; /* Optional: Rounding the image corners */
 }
 
 .description {
   font-weight: bold;
   margin-top: 10px;
+  font-size:19px;
 }
 
 .additional-text {
   color: #555;
+  font-weight:200;
   margin-top: 5px;
+  font-size:18px;
 }
-.slider {
-position: relative;
-height: 80%; /* Increased height */
-width: 50%;
-margin: 40px auto;
-overflow: hidden;
-background-color: #39D0B1;
-padding: 0px;
-}
+
 .slider {
 position: relative;
 height: 300px; /* Height remains increased */
 width: 100%;
-margin: 40px auto;
+margin-top: 15px auto;
 overflow: hidden;
 background-color: #39D0B1;
 padding: 0px;
@@ -165,13 +162,13 @@ padding-bottom: 40px; /* Adjusted padding to bring text closer to dots */
 width: 120px; /* Increased width */
 height: 120px; /* Increased height */
 object-fit: contain;
-margin: 20px 0;
+margin-top:56px;
 }
 .slide .slide-description {
-font-size: 20px;
+font-size: 24px;
 color: white;
 text-align: center;
-margin-top: auto; /* Pushes text towards the bottom */
+margin-top: 34px; /* Pushes text towards the bottom */
 }
 .slider-controls {
 position: absolute;
@@ -247,65 +244,7 @@ font: roboto;
 text-align: center;
 margin: 40px 20px;
 color: black;
-font-size: 18px;
-}
-.components-section {
-display: flex;
-justify-content: space-around;
-margin: 40px 20px;
-}
-
-.component {
-text-align: center;
-padding: 20px;
-transition: transform 0.3s ease;
-cursor: pointer;
-border-style: solid;
-border-width: 3px 3px 10px 3px;
-flex-grow: 1;
-flex-shrink: 1;
-flex-basis: 0;
-margin: 0 60px; /* Add some space between the components */
-height: 100%; /* Ensure equal height */
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between; /* Space out items within the component */
-}
-
-.component img {
-width: 100px;
-height: 100px;
-margin: 10px 0;
-object-fit: cover;
-}
-
-.component:hover {
-transform: scale(1.05);
-}
-
-.component .description {
-margin: 10px 0;
-font-size: 18px;
-color: black;
-}
-
-.component .additional-text {
-margin: 10px 0;
-font-size: 16px;
-color: black;
-}
-
-.component-1 {
-border-color: #F9D7D7C7;
-}
-
-.component-2 {
-border-color: #D7DBF9C7;
-}
-
-.component-3 {
-border-color: #F8EC88C7;
+font-size: 26px;
 }
 
 .learnMore {
@@ -313,7 +252,7 @@ border-color: #F8EC88C7;
 display: flex;              /* Enable flexbox layout */
 justify-content: center;    /* Center horizontally */
 align-items: center;        /* Center vertically */
-height: 100px;              /* Adjust height as needed for your layout */
+height: 120px;              /* Adjust height as needed for your layout */
 background-color: white;    /* Optional: Background color for better visibility */
 }
 
@@ -322,7 +261,7 @@ display: inline-block;      /* Fit the box to the text size */
 border: 5px solid #CDF0C6;  /* Set border width and color */
 text-align: center;         /* Center text inside the box */
 color: black;               /* Text color */
-font-size: 14px;            /* Font size */
+font-size: 18px;            /* Font size */
 font-weight: bold;          /* Font weight */
 padding: 10px 20px;         /* Add some padding for better spacing */
 background: white;   /* Background color for the text box */
@@ -413,13 +352,13 @@ transform: scale(1.05);
 
 .component .description {
 margin: 10px 0;
-font-size: 18px;
+font-size: 20px;
 color: black;
 }
 
 .component .additional-text {
 margin: 10px 0;
-font-size: 16px;
+font-size: 18px;
 color: black;
 }
 
@@ -474,41 +413,60 @@ display: inline-block;
 
 
 .footer {
-  background-color:#152000;
-  color: white;
-  display: flex;
-  justify-content: space-around;
-
+    background-color: #152000;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+  }
   
-}
-.footer-section {
-  flex:1;
-  text-align: center;
-}
-.footer-section h3 {
-  font-size: 20px;
-}
-.footer-section p, .footer-section a {
-  font-size: 16px;
-  color: white;
-  text-decoration: none;
-}
-.footer-section a:hover {
-  text-decoration: underline;
-}
-.footer-section .social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
-}
-.footer-section .social-icons a {
-  color: white;
-  font-size: 24px;
-  padding: 10px;
-  transition: background-color 0.3s, color 0.3s;
-}
-.footer-section .social-icons a:hover {
-  background-color: white;
-  color: #152000;
-}
+  .footer-section {
+    flex: 1;
+    text-align: center;
+    font-size:20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 28px;
+  }
+  
+  .footer-section p, .footer-section a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-section .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .footer-section .social-icons a {
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .footer-section .social-icons a:hover {
+    background-color: white;
+    color: #152000;
+  }
+  
+  .footer-lower {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  
+  /* Ensure text in "About Rovisor Research" spans three lines */
+  .footer-section.about {
+    white-space: pre-wrap; /* Ensures text wraps */
+    word-wrap: break-word; /* Allows text to break within words if needed */
+    font-size: 20px;
+  }
