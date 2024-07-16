@@ -20,7 +20,6 @@ let slideIndex = 0;
             slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
             showSlide(slideIndex);
         }
-    
         function currentSlide(index) {
             slideIndex = index;
             showSlide(slideIndex);
