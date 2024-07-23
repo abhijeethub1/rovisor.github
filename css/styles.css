@@ -49,8 +49,8 @@ body {
   text-align: center;
   color: white;
 }
-/* cover image for moments and unify pages */
-.cover1 img {
+/* cover image for each pages */
+.cover img {
   width: 100%;
   height: 390px;
   object-fit: cover;
@@ -59,23 +59,17 @@ body {
 
 /* here css starts for home page*/
 
-.cover img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  opacity: 50%;
-}
 /* cover text for home page  */
 .cover-text {
   font-family: Roboto;
-  font-size: 28px;
+  font-size: 22px;
   color: black;
   font-weight: 500;
   line-height: 56px;
   text-align: center;
   width: 1400px;
-  height: 229px;
-  top: 511px;
+  height: 180px;
+  top: 541px;
   gap: 0px;
   opacity: 0px;
   padding: 0px 25px;
@@ -84,12 +78,15 @@ body {
 }
 
 .text {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   line-height: 40px;
   color: black;
   background: rgba(255, 255, 255, 0.7); /* Optional: it adds a light background for better readability */
-  padding: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
   width: 1440px;
   margin: 0 auto;
   text-align: center;
@@ -97,10 +94,12 @@ body {
 
 .purpose {
   text-align: center;
-  margin: 60px 20px;
+  margin: 50px 5px;
   color: #16A386;
   font-size: 36px;
   font-weight: bold;
+  margin-top:20px;
+  font-size:30px;
 }
 /* grid items below our-purpose */
 .carousel-container {
@@ -147,7 +146,7 @@ body {
   position: relative;
   height: 300px; /* Height remains increased */
   width: 100%;
-  margin-top: 10px auto;
+  margin-top: 15px auto;
   overflow: hidden;
   background-color: #39D0B1;
   padding: 0px;
@@ -179,7 +178,7 @@ body {
 }
 
 .slide .slide-description {
-  font-size: 28px;
+  font-size: 22px;
   color: white;
   text-align: center;
   margin-top: 10px; /* Pushes text towards the bottom */
@@ -239,7 +238,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 28px;
+  font-size: 22px;
 }
 
 .text-box:nth-child(1) {
@@ -259,7 +258,7 @@ body {
   text-align: center;
   margin: 40px 20px;
   color: black;
-  font-size: 26px;
+  font-size: 22px;
 }
 /* learn more to navigate to unify or moments page*/
 .learnMore {
@@ -417,7 +416,7 @@ body {
   text-align: center;
   margin: 40px 20px;
   color: #16A386;
-  font-size: 44px;
+  font-size: 36px;
   font-weight: bold;
   line-height:40px;
   margin-bottom: 75px;
@@ -428,7 +427,7 @@ body {
   text-align: center;
   margin: 40px 20px;
   color: black;
-  font-size: 32px;
+  font-size: 24px;
   line-height:50px;
   margin-bottom: 65px;
   padding-left: 32px;
@@ -460,7 +459,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px; /* Increased font size */
+  font-size: 22px; /* Increased font size */
   font-weight: bold;
   color: white;
   border-radius: 15px;
@@ -515,7 +514,7 @@ body {
   text-align: center;
   margin: 40px 20px;
   color: #16A386;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
 }  
 
@@ -536,11 +535,12 @@ gap: 20px;
 flex: 1;
 max-width: 500px;
 text-align: left;
+padding:20px;
 }
 
 .text-section p {
 font-family: Roboto;
-font-size: 36px;
+font-size: 26px;
 font-weight: 400;
 line-height: 65px;
 text-align: center;
@@ -555,16 +555,16 @@ text-align: right;
 
 .image-section img {
 width: 268.94px;
-height: 216px;
-top: 654px;
+height: 206px;
+top: 244px;
 left: 309.56px;
 gap: 0px;
 opacity: 0px;
-
 }
+
 .robot {
-width: 100px;
-position: absolute;
+max-width: 100%;
+position:absolute;
 animation: move 4s infinite alternate;
 }
 
@@ -581,6 +581,7 @@ display: flex;
 justify-content: space-around;
 width: 100%;
 margin-bottom: 70px;
+padding-top: 40px;
 }
 .flip-card {
 background-color: transparent;
@@ -646,17 +647,18 @@ margin-top: 50px;
 .flip-card-front h4 {
 margin-top: 15px;
 padding: 5px 0;
+font-size:20px;
 }
 /* css ends for moments page */
 
-/* css starts for home page*/
+/* css starts for about us page*/
 .content {
   text-align: center;
   padding-top: 35px;
 }
-.content h1 {
+.content h2 {
   color: #16A386;
-  font-size: 48px;
+  font-size:30px;
   margin: 0;
   padding: 0;
 }
@@ -688,9 +690,9 @@ padding: 5px 0;
 /* paragraph-1*/
 .cover-text1-1 {
   font-family: Roboto;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 350;
-  line-height: 51.2px;
+  line-height: 1.75;
   text-align: center;
   width:1400px;
   max-width: 100%;
@@ -699,10 +701,11 @@ padding: 5px 0;
 }
 /* paragraph-2*/
 .cover-text1-2 {
+  margin-bottom:30px;
   font-family: Roboto;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 350;
-  line-height: 51.2px;
+  line-height: 1.75;
   text-align: center;
   padding-right: 60px;
   padding-left: 60px;
@@ -711,14 +714,15 @@ padding: 5px 0;
 }
 /* paragraph-3*/
 .cover-text1-3 {
+  margin-top: 15px;
   font-family: Roboto;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 350;
-  line-height: 51.2px;
+  line-height: 1.75;
   text-align: center;
   max-width: 100%;
   width:1400px;
-  margin-top: 30px;
+
 }
 .text1 {
   font-size: 78px;
@@ -738,20 +742,24 @@ padding: 5px 0;
   padding: 20px 0;
 }
 
-.content h1{
+.content h2{
   color: #19B091;
   text-align: center;
 }
-.cover-text1-2 h2{
+.cover-text1-2 h3{
+  margin-top:25px;
+  color: #19B091;
+  text-align: center;
+  margin-bottom:20px;
+}
+.cover-text1-3 h3 {
+  margin-top:25px;
   color: #19B091;
   text-align: center;
 }
-.cover-text1-3 h2 {
-  color: #19B091;
-  text-align: center;
-}
-.content h1 {
+.content h2 {
   margin-top: 0;
+  margin-bottom:20px;
 }
 .p1 {
   font-family: Roboto;
@@ -764,7 +772,7 @@ padding: 5px 0;
 .bottom-txt {
   font-family: Roboto;
   text-align: center;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 500;
   line-height: 48px;
   color: #227060;
@@ -773,7 +781,7 @@ padding: 5px 0;
   top: 2755px;
   gap: 0px;
   opacity: 0px;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-bottom: 80px;
 }
 /* common footer section for each pages*/
@@ -834,4 +842,35 @@ padding: 5px 0;
   word-wrap: break-word; /* it allows text to break within words if needed */
   font-size: 18px;
 }
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  .header1 .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 36px;
+  }
+
+  .cover-text1-1,
+  .cover-text1-2,
+  .cover-text1-3 {
+    font-size: 20px;
+  }
+
+  .bottom-txt {
+    font-size: 24px;
+  }
+}
